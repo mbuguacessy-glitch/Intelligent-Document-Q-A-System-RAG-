@@ -1,0 +1,6 @@
+Hi, my name is Sarah Omondi and I work for a logistics company in Nairobi.
+We desperately need help automating our invoicing — right now everything is
+done manually in Excel and it takes 3 days at end of month. We have about
+200 clients so it's a huge problem. Our budget is somewhere around 150,000
+shillings, maybe up to 200k if the solution is solid. We need this done in
+the next 6 weeks ideally. My email is sarah.omondi@fastlogistics.co.ke
