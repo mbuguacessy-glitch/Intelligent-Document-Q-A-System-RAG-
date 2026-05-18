@@ -1,0 +1,28 @@
+COMPANY POLICY DOCUMENT — Acme Automation Agency
+
+REFUND POLICY
+Clients may request a full refund within 14 days of project commencement
+if no deliverables have been shared. After 14 days, refunds are issued
+on a pro-rata basis depending on work completed. Refund requests must
+be submitted in writing to accounts@acme.co.ke.
+
+WORKING HOURS
+Our team operates Monday to Friday 8am to 6pm East Africa Time.
+Emergency support is available on weekends for Enterprise clients only.
+Response time for standard support tickets is 24 hours.
+
+PAYMENT TERMS
+All invoices are due within 30 days of issue. Late payments incur a
+2% monthly interest fee. Payments must be made in Kenyan Shillings
+unless otherwise agreed in the project contract.
+
+CONFIDENTIALITY
+All client data, documents, and business information shared with Acme
+Automation Agency is treated as strictly confidential. We do not share
+client information with third parties without written consent.
+
+PROJECT DELIVERY
+Standard projects are delivered within the agreed timeline stated in
+the project proposal. Delays caused by client feedback cycles are not
+counted against the delivery timeline. All deliverables are shared via
+a secure client portal.
