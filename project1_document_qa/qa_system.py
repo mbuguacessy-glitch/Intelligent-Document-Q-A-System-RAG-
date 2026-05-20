@@ -21,6 +21,8 @@ ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
 DOCS_DIR = Path(__file__).parent / "documents"
 CHROMA_DIR = Path(__file__).parent / "chroma_db"
 
+# Reads all .txt files from the documents/ folder, splits them into 500-character chunks with 50-character overlap, and returns the chunks ready for embedding
+
 
 def load_documents():
     loader = DirectoryLoader(
@@ -38,6 +40,8 @@ def load_documents():
     chunks = splitter.split_documents(documents)
     print(f"Split into {len(chunks)} chunks")
     return chunks
+
+# Checks if a ChromaDB vector store already exists on disk — loads it instantly if yes, builds it from scratch if no — so documents are only processed once
 
 
 def get_vectorstore():
@@ -62,6 +66,8 @@ def get_vectorstore():
         print("Vector store saved to disk")
 
     return vectorstore
+
+# Connects Claude to the ChromaDB retriever and builds the full RAG chain that takes a question, finds relevant chunks, and returns a grounded answer with source citation
 
 
 def build_qa_chain(vectorstore):
