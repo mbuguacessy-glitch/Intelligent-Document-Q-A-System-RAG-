@@ -32,6 +32,8 @@ class ClientIntake(BaseModel):
             return "Medium"
         return v
 
+  # Sends raw intake text to Claude and extracts structured client data as a validated ClientIntake object
+
 
 def extract_intake_data(raw_text: str) -> ClientIntake:
     client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
@@ -64,6 +66,8 @@ Return ONLY valid JSON:"""
     data = json.loads(raw_json)
     return ClientIntake(**data)
 
+# Takes a validated ClientIntake object and saves it as a new record in the Airtable Leads table
+
 
 def save_to_airtable(intake: ClientIntake, raw_text: str) -> str:
     api = Api(AIRTABLE_TOKEN)
@@ -83,6 +87,8 @@ def save_to_airtable(intake: ClientIntake, raw_text: str) -> str:
     })
 
     return record["id"]
+
+# Loops through every .txt file in the sample_intakes folder, extracts data with Claude, and saves each one to Airtable
 
 
 def process_intake_folder():
